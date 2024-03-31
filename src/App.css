@@ -1,0 +1,474 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: rgb(252, 228, 251);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+/* Rest of your CSS styles... */
+
+
+.task-list {
+  margin-top: 20px;
+  
+}
+
+
+
+.task button {
+  margin-top: 10px;
+}
+
+
+h1 {
+  text-align: center;
+  color:  black;
+  
+}
+
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #131313;
+  border-radius: 4px;
+}
+
+
+
+button {
+  
+  background-color: #4e49e1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  /* background-color: #271fc8; */
+  color: #ddd;
+}
+
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #1a1919;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+
+.task-details {
+  border: 1px solid #100f0f;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px; 
+}
+
+.task-details .task-name {
+  font-weight: bold;
+  text-align: left;
+}
+
+.task-details .task-priority {
+  font-weight: bold;
+  text-align: right;
+}
+
+  .task-details .description {
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+
+  .task-details .assignee {
+    text-align: left;
+  }
+
+
+.task-details:hover .options {
+  display: inline-block;
+}
+
+.task-details .options button {
+  margin-right: 5px;
+
+  
+}
+
+.task-details {
+  border: 1px solid #161515;
+  border-radius: 5px;
+  /* padding: 15px; */
+  /* margin-bottom: 15px; */
+  background-color:  rgb(219, 218, 218);
+}
+
+/* Left section of task details */
+.task-details-left {
+  flex: 1;
+}
+
+/* Right section of task details */
+.task-details-right {
+  flex: 1;
+  text-align: right;
+}
+
+/* Task title */
+.task-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Description */
+/* Description */
+.description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #6e6e6e;
+  text-align: justify;
+  
+  
+  
+}
+
+
+/* Priority */
+.priority {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #4e49e1;
+  height: 25%;
+  color: #f0f0f0;
+  
+  
+  
+  
+}
+
+/* Options dropdown */
+.options {
+  margin-top: 125px;
+  padding-left: 95%;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+  background-color:  blue;
+  border: none;
+  color:  white;
+  padding: 5px 3px;
+  cursor: pointer;
+  border-radius: 6px;
+  
+  
+  
+  
+  
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1;
+  padding-left: 20px;
+  font-size: 70px;
+  
+}
+
+/* Dropdown content buttons */
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  padding: 2px 2px;
+  background-color: grey;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Hover effect for dropdown content buttons */
+.dropdown-content button:hover {
+  background-color: grey;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.task-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priority {
+  margin-left: 0px;
+  margin-top: -200px;
+
+}
+.assignee{
+  margin-top: 15px;
+  margin-left: 1px;
+}
+.assign-button{
+ 
+  margin-left: -60px;
+  
+}
+.status-button{
+  margin-left: -30px;
+}
+.App {
+  text-align: center;
+}
+
+.task-form-container {
+  margin-bottom: 20px;
+}
+
+
+
+.status-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.status-box {
+  flex: 1;
+  border: 1px solid #070707;
+  border-radius: 20px;
+  margin: 0 10px;
+  /* padding: 10px; */
+}
+
+.task-list {
+  margin-top: 10px;
+}
+
+.task-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-top: 5px;
+  /* padding: 50px; */
+}
+
+.task-details-left {
+  flex: 1;
+}
+
+.task-details-right {
+  display: flex;
+  align-items: center;
+  
+}
+h1{
+  padding-right: 1000px;
+}
+
+
+.status-Pending {
+  background-color: rgb(252, 251, 250);
+}
+
+.status-InProgress {
+  background-color: rgb(252, 251, 250);
+}
+
+.status-Completed {
+  background-color: rgb(252, 251, 250);
+}
+
+.status-Deployed {
+  background-color: rgb(252, 251, 250);
+}
+
+.status-Deferred {
+  background-color:rgb(252, 251, 250);
+}
+.status{
+  color: white;
+  background-color: orange;
+  padding: 10px;
+  margin-top: -1px;
+  border-radius: 100px;
+  background-size: cover;
+}
+.add{
+  margin: 10px;
+  margin-left: -1050px;
+  /* margin-top: 50px; */
+  
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgb(252, 228, 251);
+  padding: 10px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* box shadow for depth */
+  max-width: 400px; /* adjust as needed */
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:first-child {
+  background-color: #ff6347; /* Red color for 'Yes' button */
+  color: white;
+}
+
+.modal-content button:last-child {
+  background-color: #6495ed; /* Blue color for 'No' button */
+  color: white;
+  margin-left: 10px;
+}
+
+
+.task-form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+}
+
+.task-form-container label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.task-form-container input[type="text"],
+.task-form-container select,
+.task-form-container textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form-container button {
+  display: block;
+  width: 100%;
+  background-color: #4e49e1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.task-form-container button:hover {
+  background-color: #271fc8;
+}
+
+.cancel-logo {
+  position: absolute; /* Position the logo absolutely within the relative container */
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  cursor: pointer;
+}
+.task-form-container {
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+}
+
+.task-form-container label {
+  margin-bottom: 8px;
+}
+
+.task-form-container input,
+.task-form-container select,
+.task-form-container textarea {
+  flex: 1; /* Allow input elements to grow and fill the remaining space */
+  padding: 8px;
+  margin-left: -40px; /* Add margin to separate input from label */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form-container .form-row {
+  display: flex;
+  align-items: center;
+}
+
+.task-form-container .form-row label {
+  flex: 1; /* Let labels take 50% of the container's width */
+  /* text-align: right;  */
+  margin-right: 10px; /* Add margin to separate label from input */
+  text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
