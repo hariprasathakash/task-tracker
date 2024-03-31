@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hariprasathakash/task-tracker/static/css/main.bcc81ee5.css",
+    "main.js": "/hariprasathakash/task-tracker/static/js/main.342d4296.js",
+    "static/js/453.11ec2e8c.chunk.js": "/hariprasathakash/task-tracker/static/js/453.11ec2e8c.chunk.js",
+    "index.html": "/hariprasathakash/task-tracker/index.html",
+    "main.bcc81ee5.css.map": "/hariprasathakash/task-tracker/static/css/main.bcc81ee5.css.map",
+    "main.342d4296.js.map": "/hariprasathakash/task-tracker/static/js/main.342d4296.js.map",
+    "453.11ec2e8c.chunk.js.map": "/hariprasathakash/task-tracker/static/js/453.11ec2e8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcc81ee5.css",
+    "static/js/main.342d4296.js"
+  ]
+}
